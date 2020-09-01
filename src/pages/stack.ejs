@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="Front End Developer - Carlos Hernández">
+    <meta name="description"
+        content="I’m a writer and an economist, but I also do web development. Check out the fun things I've build">
+    <meta name="keywords" content="developer, remote, react">
+    <meta name="language" content="English">
+
+    <meta property="og:title" content="Front End Developer - Carlos Hernández"">
+    <meta property=" og:description"
+        content="I’m a writer and an economist, but I also do web development. Check out the fun things I've build">
+    <meta property="og:url" content="https://carlos815.github.io/portfolio/">
+    <meta property="og:site_name" content="Front End Developer - Carlos Hernández">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description"
+        content="I’m a writer and an economist, but I also do web development. Check out the fun things I've build 😇">
+    <meta name="twitter:title" content="Front End Developer - Carlos Hernández"">
+    <meta name=" twitter:site" content="@carlos_t815">
+
+    <title>Front End Developer - Carlos Hernández</title>
+</head>
+
+<body>
+    <div id="loadOverlay" style="background-color: #383a31; position:fixed; top:0px; left:0px; width:100%; height:100%; z-index:2000; transition-duration: 3s; opacity: 1; pointer-events: none;
+    "></div>
+    <%- include components/header.ejs %>
+    <section class="page">
+        <h1>My Stack</h1>
+        <p>For front-end development, these are the technologies I use. I'm following <a
+                href="https://coggle.it/diagram/XfeRbWj7xy3dsEX8/t/web-development-in-2020">this learning path</a> by
+            LearnCode.Academy</p>
+        <ul class='tree'>
+            <li>Front End Basics
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </li>
+            <li>JAMStack
+                <ul>
+                    <li><a href="https://optimistic-elion-2c79ea.netlify.app/">Gatsby.js</a>|<a href="https://github.com/carlos815/gatsby-starter-netlify-cms">(Source)</a>
+                        <ul>
+                            <li>Deploy to Netlify</li>
+                            <li>CMS Support</li>
+                            <li>GraphQL</li>
+                            <li>Image Optimization</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>CSS Tools
+                <ul>
+                    <li>Precompilers
+                        <ul>
+                            <li><a href="https://optimistic-elion-2c79ea.netlify.app/">SASS</a></li>
+                        </ul>
+                    </li>
+                    <li>CSS Frameworks
+                        <ul>
+                            <li>
+                                <a href="https://optimistic-elion-2c79ea.netlify.app/">Tailwind</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li>Package Managers
+                <ul>
+                    <li>npm</li>
+                    <li>yarn</li>
+                </ul>
+            </li>
+            <li>Build Tools
+                <ul>
+                    <li><a href="https://github.com/carlos815/portfolio">Webpack</a></li>
+                </ul>
+            </li>
+            <li class='last'>Javascript Frameworks
+                <ul>
+                    <li>React.js
+                        <ul>
+                            <li><a href="https://carlos815.github.io/CC-clone/">Hooks</a>|<a href="https://github.com/carlos815/CC-clone">(Source)</a></li>
+                            <li><a href="https://pedantic-feynman-eb9538.netlify.app/">Redux</a>|<a href="https://github.com/carlos815/letras-redux">(Source)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Other technologies that I use that don't fit neatly in the front-end graph</p>
+        <ul class='tree'>
+            <li>Version Control Systems
+                <ul>
+                    <li>Git</li>
+                    <li>Repo hosting services
+                        <ul>
+                            <li>
+                                GitHub
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>Node.js
+                <ul>
+                    <li>Web Scrapping
+                        <ul>
+                            <li>Cheerios</li>
+                            <li>Instagram API</li>
+                            <li>Puppeteer</li>
+                        </ul>
+                    </li>
+                    <li>Axios</li>
+                    <li>Deploying to Heroku</li>
+                </ul>
+            </li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.carlos.laslucas">Flutter</a><ul>
+                    <li>Cloud Firestore</li>
+                    <li>Firestore Auth</li>
+                    <li>Provider</li>
+                    <li>API Requests</li>
+                </ul>
+            </li>
+            <li class='last'>Python
+                <ul>
+                    <li>Data<ul>
+                            <li>Pandas</li>
+                            <li>Plot.ly</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>

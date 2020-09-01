@@ -3,8 +3,7 @@ import "./amIOnline";
 import { animatePage, skipAnimation } from "./animationScripts";
 
 import '../style/style.css'
-
-
+import '../style/header.css'
   //Setting up elements for being animated. You need to have the original text stored somewhere else as reference, and you need a
   // hasBeenAnimated attribute set to false
 
@@ -79,5 +78,3 @@ import '../style/style.css'
     };
   });
 
-const overlay = document.getElementById("loadOverlay")
-overlay.style.opacity = '0'
