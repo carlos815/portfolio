@@ -39,175 +39,34 @@
     <header class="page">
       <h1 class="selected">Hey, I'm Carlos Hernández</h1>
       <div class="about-me">
+        <p class="comment">//To skip the animations just click anywhere</p>
+
         <p>I’m a front end developer.</p>
         <p>I have used React, Flutter, and Python to build some cool stuff.</p>
-        <p class="comment">
-          //You can change themes with the button in the corner :)
-        </p>
       </div>
       <p class="scroll">THE PORTFOLIO IS DOWN HERE!</p>
     </header>
-    <section class="page">
-      <h1>My Stack</h1>
-      <p>
-        For front-end development, these are the technologies I use. I'm
-        following
-        <a
-          href="https://coggle.it/diagram/XfeRbWj7xy3dsEX8/t/web-development-in-2020"
-          >this learning path</a
-        >
-        by LearnCode.Academy
-      </p>
-      <ul class="tree">
-        <li class="first">
-          Front End Basics
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-        </li>
-        <li>
-          Javascript Frameworks
-          <ul>
-            <li>
-              React.js
-              <ul>
-                <li>
-                  <a href="https://carlos815.github.io/CC-clone/">Hooks</a>|<a
-                    href="https://github.com/carlos815/CC-clone"
-                    >(Source)</a
-                  >
-                </li>
-                <li>
-                  <a href="https://pedantic-feynman-eb9538.netlify.app/"
-                    >Redux</a
-                  >|<a href="https://github.com/carlos815/letras-redux"
-                    >(Source)</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          JAMStack
-          <ul>
-            <li>
-              <a href="https://optimistic-elion-2c79ea.netlify.app/"
-                >Gatsby.js</a
-              >|<a
-                href="https://github.com/carlos815/gatsby-starter-netlify-cms"
-                >(Source)</a
-              >
-              <ul>
-                <li>Deploy to Netlify</li>
-                <li>CMS Support</li>
-                <li>GraphQL</li>
-                <li>Image Optimization</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          CSS Tools
-          <ul>
-            <li>
-              Precompilers
-              <ul>
-                <li>
-                  <a href="https://optimistic-elion-2c79ea.netlify.app/"
-                    >SASS</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              CSS Frameworks
-              <ul>
-                <li>
-                  <a href="https://optimistic-elion-2c79ea.netlify.app/"
-                    >Tailwind</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          Package Managers
-          <ul>
-            <li>npm</li>
-            <li>yarn</li>
-          </ul>
-        </li>
-        <li class="last">
-          Build Tools
-          <ul>
-            <li>
-              <a href="https://github.com/carlos815/portfolio">Webpack</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <p>Other technologies that I use. graph</p>
-      <ul class="tree">
-        <li class="first">
-          Version Control Systems
-          <ul>
-            <li>Git</li>
-            <li>
-              Repo hosting services
-              <ul>
-                <li>GitHub</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+    <section class="page"><%- include stack.ejs %></section>
+    <section class="page pomodoro">
+      <h1>Pomodoro webpage build with react</h1>
 
-        <li>
-          Node.js
-          <ul>
-            <li>
-              Web Scrapping
-              <ul>
-                <li>Cheerios</li>
-                <li>Instagram API</li>
-                <li>Puppeteer</li>
-              </ul>
-            </li>
-            <li>Axios</li>
-            <li>Deploying to Heroku</li>
-          </ul>
-        </li>
-        <li>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.carlos.laslucas"
-            >Flutter</a
-          >
-          <ul>
-            <li>Cloud Firestore</li>
-            <li>Firestore Auth</li>
-            <li>Provider</li>
-            <li>API Requests</li>
-          </ul>
-        </li>
-        <li class="last">
-          Python
-          <ul>
-            <li>
-              <a
-                href="https://colab.research.google.com/drive/11gX5ar_q2w545qYt-XwFa5JWNKgwQdhM?usp=sharing"
-                >Data</a
-              >
-              <ul>
-                <li>Pandas</li>
-                <li>Plot.ly</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <div class="image-and-description">
+        <figure>
+          <img
+            src="<%=require('../images/pomodoro.svg').default%>"
+            alt="pomodoro vector"
+            srcset=""
+          />
+        </figure>
+        <div class="description">
+          <p>A pomodoro webpage with neumorphic design.</p>
+          <p>The page uses only CSS to achieve these visuals.</p>
+          <p><a href="https://tomate.netlify.app/">Live demo</a></p>
+          <p>
+            <a href="https://github.com/carlos815/pomodoro">Source code</a>
+          </p>
+        </div>
+      </div>
     </section>
     <section class="page las-lucas-web">
       <h1>Landing Page build with Gatsby</h1>
@@ -250,7 +109,7 @@
           </p>
 
           <p>It has offline support and a nice calculator.</p>
-          <p><a href="https://laslucas.com">Check it out</a>.</p>
+          <p><a href="https://laslucas.com">Check it out</a></p>
         </div>
       </div>
 
@@ -556,7 +415,7 @@
       <h1 class="selected">:)</h1>
       <div class="about-me">
         <p class="available">🟢 I'm probably online right now.</p>
-        <p>I'm in the Caracas timezone (UTC-4).</p>
+        <p>I'm in the Bogotá timezone (UTC-5).</p>
         <p>
           Find me at:
           <a href="mailto:carlos_t815@outlook.com">carlos_t815@outlook.com</a>
