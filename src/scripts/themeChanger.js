@@ -60,23 +60,14 @@ async function changeTheme(theme, ms = 100) {
   document.cookie = `theme=${themeName}`;
   currentTheme = themeName;
   
+  /* Animate the themeToggleButton */
   themeToggleButton.style.transform = "rotate(1turn)";
   await wait(ms * 2);
 
   themeToggleButton.children[0].style.opacity = 0;
   themeToggleButton.style.backgroundColor = secondaryColor;
 
-  //  body.style.overflow = "hidden";
-
-  // await wait(500);
-  //  themeToggleButton.style.position = 'absolute';
-  //  themeToggleButton.style.height = `${buttonSize * 2}px`;
-  //  themeToggleButton.style.width = `${buttonSize * 2}px`;
-  //  themeToggleButton.style.top = "-50%";
-  //  themeToggleButton.style.right = "-50%";
-  // themeToggleButton.style.borderRadius = "50%";
-  //  await wait(200);
-
+  /* Change the theme */
   document.documentElement.style.setProperty("--main-color", mainColor);
   document.documentElement.style.setProperty(
     "--secondary-color",
@@ -86,19 +77,11 @@ async function changeTheme(theme, ms = 100) {
   document.documentElement.style.setProperty("--highlight-color", hightlight);
   document.documentElement.style.setProperty("--comment-color", comment);
 
+  /* Wait for the colors to change */
   await wait(ms * 5);
 
-  // themeToggleButton.style.height = "25px";
-  // themeToggleButton.style.width = "25px";
-
-  // themeToggleButton.style.top = "0px";
-  // themeToggleButton.style.right = "50px";
-
-  // await wait(500);
-
-  // body.style.overflow = "visible";
+  /* Animate the themeToggleButton back to the starting position */
   themeToggleButton.style.position = "inherit";
-
   themeToggleButton.style.backgroundColor = "transparent";
   themeToggleButton.children[0].style.opacity = 1;
   themeToggleButton.style.transform = "rotate(-1turn)";
