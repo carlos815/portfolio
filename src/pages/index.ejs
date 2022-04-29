@@ -47,78 +47,50 @@
       <p class="scroll">THE PORTFOLIO IS DOWN HERE!</p>
     </header>
     <section class="page"><%- include stack.ejs %></section>
-    <section class="page vue-streaming">
-      <h1>Webpage built with Vue</h1>
+    <section class="page eth">
+      <h1>Ethereum chat</h1>
 
       <div class="image-and-description">
         <figure>
           <img
-            src="<%=require('../images/vuestreaming.svg').default%>"
-            alt="pomodoro vector"
+            src="<%=require('../images/eth.svg').default%>"
+            alt="ethereum chat vector"
             srcset=""
           />
         </figure>
         <div class="description">
-          <p>API-based architecture using axios.</p>
           <p>
-            The information is loaded dynamically depending on the information
-            received from the server.
+            This chat lets you talk to other Etherum addresses using your
+            metamask account!
           </p>
-          <p>
-            <a href="https://carlos815.github.io/web-vue-livestreaming"
-              >Live demo</a
-            >
-          </p>
-          <p>
-            <a href="https://github.com/carlos815/web-vue-livestreaming"
-              >Source code</a
-            >
-          </p>
+          <p><a href="https://eth-chat.vercel.app/">Live demo</a></p>
+          <p><a href="https://github.com/carlos815/eth-chat">Source Code</a></p>
         </div>
       </div>
-    </section>
-    <section class="page pomodoro">
-      <h1>Pomodoro webpage build with react</h1>
 
-      <div class="image-and-description">
-        <figure>
-          <img
-            src="<%=require('../images/pomodoro.svg').default%>"
-            alt="pomodoro vector"
-            srcset=""
-          />
-        </figure>
-        <div class="description">
-          <p>A pomodoro webpage with neumorphic design.</p>
-          <p>The page uses only CSS to achieve these visuals.</p>
-          <p><a href="https://tomate.netlify.app/">Live demo</a></p>
-          <p>
-            <a href="https://github.com/carlos815/pomodoro">Source code</a>
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="page las-lucas-web">
-      <h1>Landing Page build with Gatsby</h1>
+      <button
+        aria-pressed="false"
+        aria-label="Show more information"
+        class="small"
+      >
+        HOW DOES IT WORK?
+      </button>
 
-      <div class="image-and-description">
-        <figure>
-          <img
-            src="<%=require('../images/quizzpipe.svg').default%>"
-            alt="smartphone vector"
-            srcset=""
-          />
-        </figure>
-        <div class="description">
-          <p>A responsive landing page with a modern design</p>
-          <p>
-            The images are optimized via gatsby-image for faster loading, and
-            has full CSM support.
-          </p>
-          <p><a href="https://quizpipe.io/">Check it out</a>.</p>
-        </div>
+      <div class="long-description hidden">
+        <p>
+          It uses <strong>Firebase</strong> for storing all the chats and
+          realtime updates.
+        </p>
+        <p>
+          It uses Metamask for login, which provides an unique address that can
+          be used to distinguish between users.
+        </p>
+        <p>
+          Built using React with Context API and styled using only Tailwind.
+        </p>
       </div>
     </section>
+
     <section class="page las-lucas-web">
       <h1>Las Lucas WPA</h1>
 
@@ -176,7 +148,6 @@
         </p>
       </div>
     </section>
-
     <section class="page las-lucas">
       <h1>Las Lucas for Android</h1>
 
@@ -217,6 +188,58 @@
         <p>It uses <strong>Provider</strong> as a state management solution.</p>
       </div>
     </section>
+    <section class="page pomodoro">
+      <h1>Pomodoro webpage build with React</h1>
+
+      <div class="image-and-description">
+        <figure>
+          <img
+            src="<%=require('../images/pomodoro.svg').default%>"
+            alt="pomodoro vector"
+            srcset=""
+          />
+        </figure>
+        <div class="description">
+          <p>A pomodoro webpage with neumorphic design.</p>
+          <p>The page uses only CSS to achieve these visuals.</p>
+          <p><a href="https://tomate.netlify.app/">Live demo</a></p>
+          <p>
+            <a href="https://github.com/carlos815/pomodoro">Source code</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="page vue-streaming">
+      <h1>Webpage built with Vue</h1>
+
+      <div class="image-and-description">
+        <figure>
+          <img
+            src="<%=require('../images/vuestreaming.svg').default%>"
+            alt="pomodoro vector"
+            srcset=""
+          />
+        </figure>
+        <div class="description">
+          <p>API-based architecture using axios.</p>
+          <p>
+            The information is loaded dynamically depending on the information
+            received from the server.
+          </p>
+          <p>
+            <a href="https://carlos815.github.io/web-vue-livestreaming"
+              >Live demo</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/carlos815/web-vue-livestreaming"
+              >Source code</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section class="page books">
       <h1>Book Finder App with Redux</h1>
       <div class="image-and-description">
@@ -262,142 +285,29 @@
         </p>
       </div>
     </section>
-    <section class="page cc-clone">
-      <h1>Caracas Chronicles remake in React</h1>
+
+    <section class="page gatsby">
+      <h1>Landing Page build with Gatsby</h1>
+
       <div class="image-and-description">
         <figure>
           <img
-            src="<%=require('../images/cc.svg').default%>"
+            src="<%=require('../images/quizzpipe.svg').default%>"
             alt="smartphone vector"
             srcset=""
           />
         </figure>
         <div class="description">
+          <p>A responsive landing page with a modern design</p>
           <p>
-            A completely responsive clone of a WordPress news website made with
-            React.
+            The images are optimized via gatsby-image for faster loading, and
+            has full CSM support.
           </p>
-          <p>
-            <a href="https://carlos815.github.io/CC-clone/">Link to the page</a>
-          </p>
+          <p><a href="https://quizpipe.io/">Check it out</a>.</p>
         </div>
-      </div>
-      <button
-        aria-pressed="false"
-        aria-label="Show more information"
-        class="small"
-      >
-        HOW DOES IT WORK?
-      </button>
-
-      <div class="long-description hidden">
-        <p>
-          Leveraging the WordPress API, I created a clone website that keeps
-          itself updated with the infromation from the real site.
-        </p>
-
-        <p>
-          Even thought it is a pixel-perfect recreation of the original Caracas
-          Chronicles, It doesn't use any of the source code.
-        </p>
-
-        <p>
-          For a longer explanation and the source code
-          <a href=" https://github.com/carlos815/CC-clone/blob/master/README.md"
-            >go here.</a
-          >
-        </p>
       </div>
     </section>
 
-    <section class="page form">
-      <h1>Form builder</h1>
-      <div class="image-and-description">
-        <figure>
-          <img
-            src="<%=require('../images/json.svg').default%>"
-            alt="smartphone vector"
-            srcset=""
-          />
-        </figure>
-        <div class="description">
-          <p>This webpage generates a form from a json file.</p>
-          <p>
-            <a href="https://carlos815.github.io/form-practice/"
-              >Check it out</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <button
-        aria-pressed="false"
-        aria-label="Show more information"
-        class="small"
-      >
-        HOW DOES IT WORK?
-      </button>
-
-      <div class="long-description hidden">
-        <p>
-          Build with React. You can specify the number of tabs and the fields,
-          and the page will adapt to keep everything looking neat.
-        </p>
-
-        <p>
-          It was made based only on
-          <a
-            href="https://dribbble.com/shots/10046374-Formulario/attachments/2064937?mode=media"
-            >this image.</a
-          >
-        </p>
-      </div>
-    </section>
-
-    <section class="page bit">
-      <h1>Bit Ninja</h1>
-      <div class="image-and-description">
-        <figure>
-          <img
-            src="<%=require('../images/bit.svg').default%>"
-            alt="smartphone vector"
-            srcset=""
-          />
-        </figure>
-        <div class="description">
-          <p>
-            This is an Android 2D platformer. I made the art (graphics,
-            animations and music), and designed the UX and UI.
-          </p>
-          <p>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.InmigracionDigital.BitNinja&hl=en_US"
-              >Google Play</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <button
-        aria-pressed="false"
-        aria-label="Show more information"
-        class="small"
-      >
-        HOW DOES IT WORK?
-      </button>
-
-      <div class="long-description hidden">
-        <p>
-          Made with Unity. This was a two-man project. I used Figma, Photoshop,
-          Affinity Designer, Asesprite, and FL Studio.
-        </p>
-
-        <p>
-          We used Unity's built in git functionality and Trello to divide tasks
-          and manage the project
-        </p>
-      </div>
-    </section>
     <section class="page this-site">
       <h1>This site</h1>
       <div class="image-and-description">

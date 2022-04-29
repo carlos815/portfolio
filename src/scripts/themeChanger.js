@@ -1,15 +1,14 @@
 import wait from "./wait";
 import getCookie from "./getCookie";
 
-
 const themeToggleButton = document.querySelector(".theme-toggle");
+const themeToggleTooltip = document.querySelector(".theme-tooltip");
 themeToggleButton.style.opacity = "1";
-
 
 //custom themes go here
 const themes = [
   {
-    themeName: "dark",
+    themeName: "ms-dos",
     mainColor: "#D4D4D4",
     secondaryColor: "#1E1E1E",
     hightlight: "#CE9178",
@@ -18,7 +17,7 @@ const themes = [
       "invert(98%) sepia(1%) saturate(2185%) hue-rotate(205deg) brightness(106%) contrast(66%)",
   },
   {
-    themeName: "blue",
+    themeName: "powershell",
     mainColor: "#EEEDF0",
     secondaryColor: "#012456",
     hightlight: "#FFFF00",
@@ -47,19 +46,15 @@ const themes = [
 ];
 
 async function changeTheme(theme, ms = 100) {
-  const {
-    themeName,
-    mainColor,
-    secondaryColor,
-    hightlight,
-    comment,
-    filter,
-  } = theme;
-  console.log('theme changed')
+  const { themeName, mainColor, secondaryColor, hightlight, comment, filter } =
+    theme;
   //save the theme in cookies
   document.cookie = `theme=${themeName}`;
   currentTheme = themeName;
-  
+
+  //Set the text for the theme tooltip
+  themeToggleTooltip.textContent = themeName;
+
   /* Animate the themeToggleButton */
   themeToggleButton.style.transform = "rotate(1turn)";
   await wait(ms * 2);
@@ -88,8 +83,6 @@ async function changeTheme(theme, ms = 100) {
 }
 let currentTheme = getCookie("theme");
 
-
-
 if (getCookie("theme") == "") {
   changeTheme(themes[0], 0);
   document.cookie = `theme=${themes[0].themeName}`;
@@ -99,11 +92,13 @@ if (getCookie("theme") == "") {
     "themeName",
     getCookie("theme")
   );
-
-  changeTheme(themes[indexOfCurrentTheme], 0);
+  if (indexOfCurrentTheme == -1) {
+    //No theme with matching name found
+    changeTheme(themes[0], 0);
+  } else {
+    changeTheme(themes[indexOfCurrentTheme], 0);
+  }
 }
-
-
 
 function findIndexOfMatchingObject(array, key, valueToFind) {
   for (let i = 0; i < array.length; i++) {
@@ -111,6 +106,7 @@ function findIndexOfMatchingObject(array, key, valueToFind) {
       return i;
     }
   }
+  return -1;
 }
 
 themeToggleButton.onclick = async () => {
@@ -124,4 +120,3 @@ themeToggleButton.onclick = async () => {
 
   changeTheme(themes[nextThemeIndex]);
 };
-

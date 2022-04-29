@@ -26,7 +26,6 @@ async function writeAnimation(DOMElement) {
 
     DOMElement.textContent += DOMElement.finalText[i];
     i++;
-
     //how much to wait between key presses
     let ms = 40;
 

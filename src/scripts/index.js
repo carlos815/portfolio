@@ -31,7 +31,7 @@ import '../style/header.css'
     };
   });
 
-  //this check if an element is in the view port. This is used to trigger animations
+  //this checks if an element is in the view port. This is used to trigger animations
   function isInView(el) {
     let box = el.getBoundingClientRect();
 
