@@ -387,7 +387,6 @@ img {
         order: 1;
     }
 }
-
 .navbuttons {
     justify-content: space-between;
     align-items: center;
@@ -417,7 +416,7 @@ nav ul {
     justify-content: space-around;
     padding: 20% 0;
     width: 100%;
-    border-right: 1px solid var(--main-color); 
+    border-right: 1px solid var(--main-color);
 }
 
 label {
@@ -484,6 +483,11 @@ nav ul li p {
     background-color: transparent;
 }
 
+.theme-toggle-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .theme-toggle:hover img {
     transform: scale(1.3);
     cursor: pointer;
@@ -499,7 +503,7 @@ nav ul li p {
     font-weight: bold;
 }
 
-.theme-toggle:hover  + .theme-tooltip {
+.theme-toggle:hover+.theme-tooltip {
     opacity: 1;
 }
 
@@ -551,9 +555,11 @@ nav ul a:hover {
         padding: 0 7%;
         z-index: 5;
     }
+
     label {
         display: none;
     }
+
     nav {
         position: relative;
         padding: 0;
@@ -565,9 +571,8 @@ nav ul a:hover {
         border: none;
         background: transparent;
         margin: 0 auto;
-
-
     }
+
     nav ul {
         flex-direction: row;
         padding: 0;
@@ -575,25 +580,31 @@ nav ul a:hover {
         border-right: none;
 
     }
-    nav ul a, nav ul li {
+
+    nav ul a,
+    nav ul li {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
         width: 100%;
     }
+
     nav ul a {
         border-right: 1px solid var(--main-color);
         border-bottom: 1px solid var(--main-color);
     }
+
     nav ul a:first-of-type {
         border-left: 1px solid var(--main-color);
     }
+
     nav ul a {
         height: 40px;
 
         background: var(--secondary-color);
     }
+
     nav ul li:last-of-type {
         margin: auto;
         width: 100%;

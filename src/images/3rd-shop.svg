@@ -1,0 +1,27 @@
+<svg width="165" height="107" viewBox="0 0 165 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M118 85.3333H7V6H131.535V31" stroke="black"/>
+<rect x="117.5" y="31.5" width="46.0465" height="73.8117" rx="4.5" stroke="black"/>
+<rect x="122.367" y="36.8988" width="36.3128" height="63.0141" stroke="black"/>
+<rect x="122" y="41" width="37" height="1" fill="black"/>
+<rect x="137.97" y="33.8337" width="5.1008" height="0.566755" fill="black"/>
+<path d="M0.5 5C0.5 2.51472 2.51472 0.5 5 0.5H133.372C135.857 0.5 137.872 2.51472 137.872 5V31.5H123C119.962 31.5 117.5 33.9624 117.5 37V91.7481H5C2.51472 91.7481 0.5 89.7333 0.5 87.2481V5Z" stroke="black"/>
+<path d="M87.694 92.248C91.2647 95.721 93.5161 100.193 93.7865 105.105C93.8047 105.436 93.8139 105.769 93.8139 106.105L44 106.105C44 105.769 44.0092 105.436 44.0275 105.105C44.2978 100.193 46.5492 95.721 50.12 92.248" stroke="black" stroke-linecap="square"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M131 6H7V14H131V6ZM87 8H51V11.4286H87V8Z" fill="black"/>
+<rect x="7" y="14" width="124" height="5" fill="black"/>
+<rect x="72" y="23" width="37" height="4" fill="black"/>
+<rect x="126" y="73" width="29" height="4" fill="black"/>
+<rect x="126" y="79" width="29" height="1" fill="black"/>
+<rect x="126" y="81" width="29" height="1" fill="black"/>
+<rect x="126" y="83" width="29" height="1" fill="black"/>
+<rect x="126" y="85" width="29" height="1" fill="black"/>
+<rect x="72" y="31" width="37" height="1" fill="black"/>
+<rect x="72" y="34" width="37" height="1" fill="black"/>
+<rect x="72" y="37" width="37" height="1" fill="black"/>
+<rect x="72" y="40" width="37" height="1" fill="black"/>
+<rect x="72" y="43" width="37" height="1" fill="black"/>
+<rect x="72" y="68" width="37" height="5" fill="black"/>
+<rect x="133" y="91" width="15" height="4" fill="black"/>
+<rect x="72" y="57" width="27" height="8" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M66 23H29V73H66V23ZM46.9221 37C43.9889 37 41.5783 39.2372 41.3036 42.0983H39.4567L38 55.0181H56L54.5433 42.0983H52.5406C52.2658 39.2372 49.8552 37 46.9221 37ZM46.9221 38.8209C44.9958 38.8209 43.4022 40.2453 43.1371 42.0983H50.7072C50.4421 40.2453 48.8485 38.8209 46.9221 38.8209Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M155 44H126V70H155V44ZM135.809 53.8364H136.835C136.988 52.2469 138.327 51.004 139.957 51.004C141.586 51.004 142.925 52.2469 143.078 53.8364H144.191L145 61.0141H135L135.809 53.8364ZM139.957 52.0156C138.887 52.0156 138.001 52.807 137.854 53.8364H142.06C141.912 52.807 141.027 52.0156 139.957 52.0156Z" fill="black"/>
+</svg>

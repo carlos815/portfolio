@@ -47,6 +47,43 @@
       <p class="scroll">THE PORTFOLIO IS DOWN HERE!</p>
     </header>
     <section class="page"><%- include stack.ejs %></section>
+       <section class="page">
+      <h1>Online Store</h1>
+
+      <div class="image-and-description">
+        <figure>
+          <img
+            src="<%=require('../images/3rd-shop.svg').default%>"
+            alt="ethereum chat vector"
+            srcset=""
+          />
+        </figure>
+        <div class="description">
+          <p>
+            A fullstack project powered by Next.js and KeystoneJS. Supports account creation and credit card payments. With full CMS support for managing products and accounts with ease.
+          </p>
+          <p><a href="https://3rd-shop.vercel.app/">Demo</a></p>
+          <p><a href="https://github.com/carlos815/3rd-shop-frontendba">Frontend source code</a></p>
+          <p><a href="https://github.com/carlos815/3rd-shop-backend">Backend source code</a></p>
+        </div>
+      </div>
+
+      <button
+        aria-pressed="false"
+        aria-label="Show more information"
+        class="small"
+      >
+        HOW DOES IT WORK?
+      </button>
+
+      <div class="long-description hidden">
+        <p>The front uses Next.js, Tailwind for the styles and Grapqhl with Apollo to communicate with the server</p>
+        <p>The backend uses KeystoneJS and a SQLite database.</p>
+        <p>The images are hosted in Cloudinary and the payments are handled with Stripe</p>
+        <p>Check out <a href="https://cccarlos.gatsbyjs.io/develop-an-eshop/">my blog</a> for more details on how it works</p>
+       
+      </div>
+    </section>
     <section class="page eth">
       <h1>Ethereum chat</h1>
 
@@ -60,7 +97,7 @@
         </figure>
         <div class="description">
           <p>
-            This chat lets you talk to other Etherum addresses using your
+            This chat lets you talk to other Ethereum addresses using your
             metamask account!
           </p>
           <p><a href="https://eth-chat.vercel.app/">Live demo</a></p>
